@@ -1,40 +1,42 @@
 import React from 'react';
 
 export default function LocationPanel(props) {
-  const {
-    suggestions,
-    setPickup,
-    setDestination,
-    setPanelOpen,
-    setVehiclePanel,
-    activeField,
-  } = props;
+    const {
+        suggestions,
+        setPickup,
+        setDestination,
+        activeField,
+    } = props;
 
-  // Handler function to process suggestion click
-  const handleSuggestionClick = (suggestion) => {
-    if (activeField === 'pickup') {
-      setPickup(suggestion.description);
-    } else if (activeField === 'destination') {
-      setDestination(suggestion.description);
-    }
+    const handleSuggestionClick = (suggestion) => {
+        if (activeField === 'pickup') {
+            setPickup(suggestion.description);
+        } else if (activeField === 'destination') {
+            setDestination(suggestion.description);
+        }
+    };
 
-  };
-
-  return (
-    <div>
-      {suggestions.map((suggestion, idx) => (
-        <div
-          key={suggestion.place_id || idx}
-          onClick={() => handleSuggestionClick(suggestion)}
-          className="flex active:border-black border-2 p-3 rounded-xl gap-3 items-center my-2 justify-start"
-        >
-          <h2 className="h-10 ml-4 w-12 bg-[#eee] flex justify-center items-center rounded-full">
-            <i className="ri-map-pin-fill"></i>
-          </h2>
-          {/* Render the description field */}
-          <h4 className="font-medium">{suggestion.description}</h4>
+    return (
+        <div className='mt-5 space-y-2 overflow-y-auto no-scrollbar'>
+            {suggestions.length > 0 ? (
+                suggestions.map((suggestion, idx) => (
+                    <div
+                        key={suggestion.place_id || idx}
+                        onClick={() => handleSuggestionClick(suggestion)}
+                        className="flex active:bg-gray-100 hover:bg-gray-50 border border-transparent active:border-gray-200 p-4 rounded-2xl gap-4 items-center transition-all cursor-pointer group"
+                    >
+                        <div className="h-12 w-12 bg-gray-100 flex justify-center items-center rounded-full group-hover:bg-white transition-colors shrink-0 shadow-sm">
+                            <i className="ri-map-pin-2-fill text-xl text-gray-600 group-hover:text-black transition-colors"></i>
+                        </div>
+                        <h4 className="font-bold text-gray-800 text-sm leading-snug">{suggestion.description}</h4>
+                    </div>
+                ))
+            ) : (
+                <div className='flex flex-col items-center justify-center py-10 text-gray-400'>
+                    <i className="ri-search-line text-4xl mb-2 opacity-20"></i>
+                    <p className='text-sm font-medium'>Start typing to see suggestions</p>
+                </div>
+            )}
         </div>
-      ))}
-    </div>
-  );
+    );
 }
