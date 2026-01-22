@@ -13,9 +13,9 @@ createRoot(document.getElementById('root')).render(
     <CaptainContext>
     <UserContext>
    <SocketContext>
-   <BrowserRouter>
+   
 <App />
-</BrowserRouter>
+
    </SocketContext>
 
     </UserContext>
