@@ -13,18 +13,18 @@ function Home() {
       {/* Hero Image Section */}
       <div className='relative flex-grow overflow-hidden'>
         <div
-          className='absolute inset-0 bg-[url("https://images.unsplash.com/photo-1614028674026-a65e31bfd27c?q=80&w=2070&auto=format&fit=crop")] bg-center bg-cover transition-transform duration-[10s]'
+          className='absolute inset-0 bg-[url("https://ewscripps.brightspotcdn.com/dims4/default/d78cd1a/2147483647/strip/true/crop/6720x3528+0+566/resize/1200x630!/quality/90/?url=http%3A%2F%2Fewscripps-brightspot.s3.amazonaws.com%2F39%2F27%2Fd46df7c145e4a817388eb7621b28%2Fshutterstock-2416070631.jpg")] bg-center bg-cover transition-transform duration-[10s]'
           style={{ transform: loaded ? 'scale(1.1)' : 'scale(1)' }}
         ></div>
         <div className='absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/10 transition-opacity duration-1000' style={{ opacity: loaded ? 1 : 0 }}></div>
 
-        <div className={`p-8 absolute top-0 left-0 w-full transition-all duration-1000 delay-300 ${loaded ? 'translate-y-0 opacity-100' : '-translate-y-10 opacity-0'}`}>
+        {/* <div className={`p-8 absolute top-0 left-0 w-full transition-all duration-1000 delay-300 ${loaded ? 'translate-y-0 opacity-100' : '-translate-y-10 opacity-0'}`}>
           <img
             className='w-20 filter drop-shadow-2xl'
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Uber_logo_2018.svg/2560px-Uber_logo_2018.svg.png"
             alt="Uber"
           />
-        </div>
+        </div> */}
       </div>
 
       {/* Content Section */}

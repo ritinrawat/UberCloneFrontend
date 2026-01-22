@@ -11,9 +11,9 @@ function VehiclePanel(props) {
                     props.setConfirmRide(true)
                     props.setVehiclePanel(false)
                     props.setVehicleType('car')
-                    props.setVehicleImage('https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,h_368,w_552/v1548646931/assets/64/93c2a1-c3d2-4ee2-a4c6-bc472713371f/original/UberGo.png')
+                    props.setVehicleImage('https://media.istockphoto.com/id/1150425295/photo/3d-illustration-of-generic-hatchback-car-perspective-view.jpg?s=612x612&w=0&k=20&c=vws8oDFjcfGpqNAybWPxsA9XROdcBh2MXW2PGEDgk-8=')
                 }} className='flex border-[3px] border-transparent active:border-black hover:bg-gray-50 mb-2 rounded-2xl w-full p-4 items-center justify-between transition-all cursor-pointer group'>
-                    <img className='h-[70px] group-hover:scale-110 transition-transform' src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,h_368,w_552/v1548646931/assets/64/93c2a1-c3d2-4ee2-a4c6-bc472713371f/original/UberGo.png" alt="UberGo" />
+                    <img className='h-[70px] group-hover:scale-110 transition-transform' src="https://media.istockphoto.com/id/1150425295/photo/3d-illustration-of-generic-hatchback-car-perspective-view.jpg?s=612x612&w=0&k=20&c=vws8oDFjcfGpqNAybWPxsA9XROdcBh2MXW2PGEDgk-8=" alt="UberGo" />
                     <div className='ml-4 flex-grow'>
                         <h4 className='font-black text-lg text-gray-900'>UberGo <span className='text-xs bg-gray-100 px-2 py-0.5 rounded ml-2'><i className="ri-user-3-fill"></i> 4</span></h4>
                         <h5 className='font-bold text-sm text-gray-400 mt-0.5'>2 mins away • 11:24</h5>
@@ -26,9 +26,9 @@ function VehiclePanel(props) {
                     props.setConfirmRide(true)
                     props.setVehiclePanel(false)
                     props.setVehicleType('motorcycle')
-                    props.setVehicleImage('https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,h_368,w_552/v1649231091/assets/2c/ad308f-c486-4539-90c3-c7993b4089ce/original/Uber_Moto_Orange_312x208_Pixels_Mobile.png')
+                    props.setVehicleImage('https://i0.wp.com/www.asphaltandrubber.com/wp-content/uploads/2015/11/2016-Suzuki-SV650-A-02.jpg?fit=2000%2C1333&ssl=1')
                 }} className='flex border-[3px] border-transparent active:border-black hover:bg-gray-50 mb-2 rounded-2xl w-full p-4 items-center justify-between transition-all cursor-pointer group'>
-                    <img className='h-[70px] group-hover:scale-110 transition-transform' src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,h_368,w_552/v1649231091/assets/2c/ad308f-c486-4539-90c3-c7993b4089ce/original/Uber_Moto_Orange_312x208_Pixels_Mobile.png" alt="Moto" />
+                    <img className='h-[70px] group-hover:scale-110 transition-transform' src="https://i0.wp.com/www.asphaltandrubber.com/wp-content/uploads/2015/11/2016-Suzuki-SV650-A-02.jpg?fit=2000%2C1333&ssl=1" alt="Moto" />
                     <div className='ml-4 flex-grow'>
                         <h4 className='font-black text-lg text-gray-900'>Moto <span className='text-xs bg-gray-100 px-2 py-0.5 rounded ml-2'><i className="ri-user-3-fill"></i> 1</span></h4>
                         <h5 className='font-bold text-sm text-gray-400 mt-0.5'>3 mins away • 11:32</h5>
@@ -41,9 +41,9 @@ function VehiclePanel(props) {
                     props.setConfirmRide(true)
                     props.setVehiclePanel(false)
                     props.setVehicleType('auto')
-                    props.setVehicleImage("https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,h_368,w_552/v1648431773/assets/1d/dbd140-585e-475a-b3d3-21b672a09575/original/Uber_Auto_552x368_Pixels_Desktop.png")
+                    props.setVehicleImage("https://thumbs.dreamstime.com/b/bright-yellow-three-wheeled-auto-rickshaw-black-canopy-isolated-white-background-vibrant-roof-presented-plain-411903034.jpg")
                 }} className='flex border-[3px] border-transparent active:border-black hover:bg-gray-50 mb-2 rounded-2xl w-full p-4 items-center justify-between transition-all cursor-pointer group'>
-                    <img className='h-[70px] group-hover:scale-110 transition-transform' src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,h_368,w_552/v1648431773/assets/1d/dbd140-585e-475a-b3d3-21b672a09575/original/Uber_Auto_552x368_Pixels_Desktop.png" alt="UberAuto" />
+                    <img className='h-[70px] group-hover:scale-110 transition-transform' src="https://thumbs.dreamstime.com/b/bright-yellow-three-wheeled-auto-rickshaw-black-canopy-isolated-white-background-vibrant-roof-presented-plain-411903034.jpg" alt="UberAuto" />
                     <div className='ml-4 flex-grow'>
                         <h4 className='font-black text-lg text-gray-900'>UberAuto <span className='text-xs bg-gray-100 px-2 py-0.5 rounded ml-2'><i className="ri-user-3-fill"></i> 3</span></h4>
                         <h5 className='font-bold text-sm text-gray-400 mt-0.5'>3 mins away • 11:28</h5>
